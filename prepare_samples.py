@@ -6,7 +6,9 @@ def prepare_samples(root_dir):
     for file_path in root_path.rglob("*"): # Recursively finds all files and directories
         if file_path.is_dir():
             try:
-                Path(os.path.join(file_path,".gitkeep")).touch()
+                keepfile = Path(os.path.join(file_path,".gitkeep"))
+                if (keepfile.exists() == False):
+                    keepfile.touch()
             except OSError as e:
                 print(f"Error touching {file_path}: {e}")
 

@@ -1,0 +1,2287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kit
+	firmwareVersion="4.0.0"
+	earliestCompatibleFirmware="4.0.0-beta"
+	lpfMode="24dB"
+	modFXType="flanger"
+	modFXCurrentParam="feedback"
+	currentFilterType="lpf">
+	<delay
+		pingPong="1"
+		analog="0"
+		syncLevel="7" />
+	<compressor
+		syncLevel="6"
+		attack="327244"
+		release="936" />
+	<defaultParams
+		reverbAmount="0x80000000"
+		volume="0x33333332"
+		pan="0x00000000"
+		sidechainCompressorShape="0xDC28F5C3"
+		modFXDepth="0x00000000"
+		modFXRate="0xE147AE15"
+		stutterRate="0x00000000"
+		sampleRateReduction="0x80000000"
+		bitCrush="0x80000000"
+		modFXOffset="0x00000000"
+		modFXFeedback="0x80000000">
+		<delay
+			rate="0x00000000"
+			feedback="0x80000000" />
+		<lpf
+			frequency="0x7FFFFFFF"
+			resonance="0x80000000" />
+		<hpf
+			frequency="0x80000000"
+			resonance="0x80000000" />
+		<equalizer
+			bass="0x00000000"
+			treble="0x00000000"
+			bassFrequency="0x00000000"
+			trebleFrequency="0x00000000" />
+	</defaultParams>
+	<soundSources>
+		<sound
+			name="owbell 3 Wendel olor A 17"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Cowbell 3 Wendel Color A 17.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="3572" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="owbell 4 Wendel olor A 10"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Cowbell 4 Wendel Color A 10.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="4630" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="owbell Muted Wendel 17"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Cowbell Muted Wendel 17.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="11554" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="owbell Open Wendel 21"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Cowbell Open Wendel 21.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="8820" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Handclap A Wendel olor  19"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/HandClap A Wendel Color C 19.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="8203" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Handclap B Wendel olor  22"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/HandClap B Wendel Color C 22.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="7409" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Hihat losed Wendel 06"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/HiHat Closed Wendel 06.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="9878" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Hihat losed Wendel olor A 20"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/HiHat Closed Wendel Color A 20.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="4895" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Hihat Open Wendel olor B 19"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/HiHat Open Wendel Color B 19.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="9878" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Kick Heart Wendel olor  10"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Kick Heart Wendel Color C 10.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="16361" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Kick Heart Wendel olor  17"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Kick Heart Wendel Color C 17.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="11863" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Long Duck Wendel olor A 20"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Long Duck Wendel Color A 20.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="2293" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Short Duck Wendel olor A 18"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Short Duck Wendel Color A 18.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="1455" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Snare A Wendel olor A 16"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Snare A Wendel Color A 16.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="12039" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Snare B Wendel olor A 20"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Snare B Wendel Color A 20.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="16273" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+		<sound
+			name="Snare Heart Wendel olor  18"
+			polyphonic="auto"
+			voicePriority="1"
+			sideChainSend="2147483647"
+			mode="subtractive"
+			lpfMode="24dB"
+			modFXType="none">
+			<osc1
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0"
+				fileName="SAMPLES/Samples From Mars/Drums/Wendel From Mars/Wndl Mad Cw/Snare Heart Wendel Color C 18.wav">
+				<zone
+					startSamplePos="0"
+					endSamplePos="10496" />
+			</osc1>
+			<osc2
+				type="sample"
+				loopMode="1"
+				reversed="0"
+				timeStretchEnable="0"
+				timeStretchAmount="0" />
+			<lfo1
+				type="triangle"
+				syncLevel="0" />
+			<lfo2
+				type="triangle" />
+			<unison
+				num="1"
+				detune="8" />
+			<compressor
+				syncLevel="7"
+				attack="327244"
+				release="936" />
+			<delay
+				pingPong="1"
+				analog="0"
+				syncLevel="7" />
+			<defaultParams
+				arpeggiatorGate="0x00000000"
+				portamento="0x80000000"
+				compressorShape="0xDC28F5C3"
+				oscAVolume="0x7FFFFFFF"
+				oscAPulseWidth="0x00000000"
+				oscAWavetablePosition="0x80000000"
+				oscBVolume="0x80000000"
+				oscBPulseWidth="0x00000000"
+				oscBWavetablePosition="0x80000000"
+				noiseVolume="0x80000000"
+				volume="0x4CCCCCCC"
+				pan="0x00000000"
+				lpfFrequency="0x7FFFFFFF"
+				lpfResonance="0x80000000"
+				hpfFrequency="0x80000000"
+				hpfResonance="0x80000000"
+				lfo1Rate="0x19999999"
+				lfo2Rate="0x00000000"
+				modulator1Amount="0x80000000"
+				modulator1Feedback="0x80000000"
+				modulator2Amount="0x80000000"
+				modulator2Feedback="0x80000000"
+				carrier1Feedback="0x80000000"
+				carrier2Feedback="0x80000000"
+				modFXDepth="0x00000000"
+				modFXRate="0x00000000"
+				delayRate="0x00000000"
+				delayFeedback="0x80000000"
+				reverbAmount="0x80000000"
+				arpeggiatorRate="0x00000000"
+				stutterRate="0x00000000"
+				sampleRateReduction="0x80000000"
+				bitCrush="0x80000000"
+				modFXOffset="0x00000000"
+				modFXFeedback="0x00000000">
+				<envelope1
+					attack="0x80000000"
+					decay="0xE6666666"
+					sustain="0x7FFFFFFF"
+					release="0x80000000" />
+				<envelope2
+					attack="0xE6666666"
+					decay="0xE6666666"
+					sustain="0x00000000"
+					release="0xE6666666" />
+				<patchCables>
+					<patchCable
+						source="velocity"
+						destination="volume"
+						amount="0x3FFFFFE8" />
+				</patchCables>
+				<equalizer
+					bass="0x00000000"
+					treble="0x00000000"
+					bassFrequency="0x00000000"
+					trebleFrequency="0x00000000" />
+			</defaultParams>
+			<arpeggiator
+				mode="off"
+				numOctaves="2"
+				syncLevel="7" />
+			<modKnobs>
+				<modKnob
+					controlsParam="pan" />
+				<modKnob
+					controlsParam="volumePostFX" />
+				<modKnob
+					controlsParam="lpfResonance" />
+				<modKnob
+					controlsParam="lpfFrequency" />
+				<modKnob
+					controlsParam="env1Release" />
+				<modKnob
+					controlsParam="env1Attack" />
+				<modKnob
+					controlsParam="delayFeedback" />
+				<modKnob
+					controlsParam="delayRate" />
+				<modKnob
+					controlsParam="reverbAmount" />
+				<modKnob
+					controlsParam="volumePostReverbSend"
+					patchAmountFromSource="compressor" />
+				<modKnob
+					controlsParam="pitch"
+					patchAmountFromSource="lfo1" />
+				<modKnob
+					controlsParam="lfo1Rate" />
+				<modKnob
+					controlsParam="pitch" />
+				<modKnob
+					controlsParam="stutterRate" />
+				<modKnob
+					controlsParam="bitcrushAmount" />
+				<modKnob
+					controlsParam="sampleRateReduction" />
+			</modKnobs>
+		</sound>
+	</soundSources>
+	<selectedDrumIndex>0</selectedDrumIndex>
+</kit>
